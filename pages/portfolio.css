@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+}
+
+.aboutMe{
+    background: #192130;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 935px;
+}
+
+
+.aboutMe__container{
+    width: 295px;
+    padding: 100px 45px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-me__container-text{
+    display: grid;
+    gap: 30px;
+}
+.aboutMe-title{
+    font-weight: 700;
+    font-size: 42px;
+
+}
+.aboutMe-description{
+    font-weight: 400;
+    font-size: 18px;
+}
+.aboutMe-img{
+    width: 295px;
+    height: auto;
+}
+
+
+@media (min-width: 992px){
+    .aboutMe__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMe__container{
+        width: 1000px;
+    }
+
+    .about-me__container-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutMe-img{
+        width: 400px;
+        height: auto;
+    }
+
+}

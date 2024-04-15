@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+}
+
+.services-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #13171C;
+    padding: 210px 230px; 
+    height: 892px;
+}
+
+
+.services__container-title{
+    padding-right: 100px;
+}
+
+.services__title-color{
+    color: #00ADB5;
+}
+
+.services-title{
+    font-weight: 700;
+    font-size: 96px;
+    color: white;
+}
+.services-img{
+    width: 353px;
+    height: 340px;
+}
+
+@media (max-width: 992px) {
+    .services-container{
+        flex-direction: column;
+        padding: 70px 44px;
+    }
+    .services__container-title{
+        padding: 0 0 54px 0;
+    }
+    .services-title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 60px;
+    }
+    .services-img{
+        width: 219px;
+        height: 211px;
+    }
+}
+
+ /* Proyectos */
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 942px;
+    background-color: #33171C;
+}
+.proyectos-title{
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    padding: 100px 0;
+}
+.proyectos-title-color{
+    color: #00ADB5;
+}
+.proyectos-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+.proyecto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #393E4680;
+    border-radius: 16px;
+    padding: 42px 40px;
+    height: 500px;
+}
+.proyecto-img{
+    width: 265px;
+    height: 158px;
+}
+.proyectos-container__texto{
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 280px;
+}
+.proyectos-container__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+.proyectos-container__description{
+    color: #EEEEEE;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+@media (max-width: 1167px) {
+    .proyectos{
+        height: auto;
+        padding: 100px 0;
+    }
+    .proyectos-container{
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+    .proyectos-title{
+        display: none;
+    }
+    .proyecto{
+        max-width: 375px;
+    }
+    
+}
